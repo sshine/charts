@@ -11,19 +11,16 @@
 
     devshell.url = "github:numtide/devshell";
     devshell.inputs.nixpkgs.follows = "nixpkgs";
+
+    helm-vendor.url = "git+ssh://git@git.shine.town/infra/helm-vendor";
   };
 
   outputs =
-    {
-      self,
-      flake-parts,
-      import-tree,
-      ...
-    }@inputs:
-    flake-parts.lib.mkFlake { inherit inputs; } (
-      {
+    inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; } (
+      inputs.import-tree ./nix
+      // {
         systems = [ "x86_64-linux" "aarch64-linux" ];
       }
-      // import-tree ./modules
     );
 }

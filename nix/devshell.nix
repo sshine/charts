@@ -2,12 +2,11 @@
 {
   imports = [ inputs.devshell.flakeModule ];
 
-  perSystem = { pkgs, ... }: {
+  perSystem = { pkgs, system, ... }: {
     devshells.default = {
       packages = [
-        pkgs.just
         pkgs.kubernetes-helm
-        pkgs.python3
+        inputs.helm-vendor.packages.${system}.default
       ];
     };
   };
