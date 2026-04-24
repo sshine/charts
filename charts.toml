@@ -91,6 +91,11 @@ repo = "https://grafana.github.io/helm-charts"
 chart = "loki"
 version = "6.25.0"
 
+[multica]
+oci = "oci://ghcr.io/sshine/charts/multica"
+chart = "multica"
+version = "0.1.0"
+
 [seaweedfs]
 repo = "https://seaweedfs.github.io/seaweedfs/helm"
 chart = "seaweedfs"
