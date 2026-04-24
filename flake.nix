@@ -12,7 +12,7 @@
     devshell.url = "github:numtide/devshell";
     devshell.inputs.nixpkgs.follows = "nixpkgs";
 
-    helm-vendor.url = "git+ssh://git@git.shine.town/infra/helm-vendor";
+    helm-vendor.url = "git+https://git.shine.town/infra/helm-vendor";
   };
 
   outputs =

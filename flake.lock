@@ -243,17 +243,17 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1776282202,
-        "narHash": "sha256-EVKSsFGmrhgBJYsUh4rIdj57+eBWiYUNJee+M88Woec=",
+        "lastModified": 1777040449,
+        "narHash": "sha256-wu59uue8SApPx2QatJqR7Gfq9stLRF+g1rXoNGqRS3s=",
         "ref": "refs/heads/main",
-        "rev": "e2bc74ea74ed200d2a0864c6e675aad09b7b5db0",
-        "revCount": 3,
+        "rev": "2487627e10c2f05053a6cc251f3980539d58aba2",
+        "revCount": 10,
         "type": "git",
-        "url": "ssh://git@git.shine.town/infra/helm-vendor"
+        "url": "https://git.shine.town/infra/helm-vendor"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@git.shine.town/infra/helm-vendor"
+        "url": "https://git.shine.town/infra/helm-vendor"
       }
     },
     "import-tree": {
