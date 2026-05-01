@@ -5,17 +5,25 @@ _default:
 ci: check
 
 # Pull charts from upstream into charts/ (all if no name given)
-vendor name='--all':
-    helm-vendor vendor {{name}}
+fetch name='--all':
+    helm-vendor fetch {{name}}
 
 # Verify vendored charts match upstream (all if no name given)
 check name='--all':
     helm-vendor check {{name}}
 
+# Show charts whose pinned version is older than upstream
+outdated:
+    helm-vendor outdated
+
 # Update a chart's pinned version in charts.toml
 update name version:
     helm-vendor update {{name}} {{version}}
 
-# List all charts and their versions
-list:
-    helm-vendor list
+# Bump every chart in charts.toml to its latest upstream version
+update-all:
+    helm-vendor update --all --latest
+
+# List all charts and their versions (pass --check to query upstream)
+list *flags:
+    helm-vendor list {{flags}}

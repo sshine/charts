@@ -1,5 +1,6 @@
 # Vendored Helm chart registry.
-# To update: change the version below, run `just vendor <name>`, review `git diff`.
+# To update: change the version below, run `just fetch <name>`, review `git diff`.
+# Use `just outdated` to see which charts have newer upstream versions.
 
 [alloy]
 repo = "https://grafana.github.io/helm-charts"
