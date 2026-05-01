@@ -17,4 +17,4 @@ sources:
 - https://github.com/multica-ai/multica
 - https://github.com/sshine/multica-helm
 type: application
-version: 0.1.0
+version: 0.2.0

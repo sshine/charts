@@ -10,4 +10,4 @@ jobs:
     runs-on: nixos
     steps:
       - uses: actions/checkout@v4
-      - run: nix develop --command helm-vendor check --all
+      - run: nix develop --command just check
