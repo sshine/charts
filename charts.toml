@@ -87,6 +87,11 @@ repo = "https://prometheus-community.github.io/helm-charts"
 chart = "kube-prometheus-stack"
 version = "69.7.4"
 
+[metrics-server]
+repo = "https://kubernetes-sigs.github.io/metrics-server/"
+chart = "metrics-server"
+version = "3.13.0"
+
 [loki]
 repo = "https://grafana.github.io/helm-charts"
 chart = "loki"
