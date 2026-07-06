@@ -126,3 +126,8 @@ version = "0.32.0"
 repo = "https://helm.releases.hashicorp.com"
 chart = "vault-secrets-operator"
 version = "1.3.0"
+
+[vault-config-operator]
+repo = "https://redhat-cop.github.io/vault-config-operator"
+chart = "vault-config-operator"
+version = "v0.8.49"
